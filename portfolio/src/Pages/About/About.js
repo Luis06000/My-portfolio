@@ -1,6 +1,7 @@
 import './About.css';
 import Skills from './Skills/Skills';
 import Tools from './Tools/Tools';
+import AboutMe from './About-me';
 
 function About() {
     return (
@@ -9,11 +10,7 @@ function About() {
             <h1>Learn a bit more about me</h1>
             🙋🏻‍♂️
           </div>
-          <div className='about-me'>
-            <span style={{ position:'relative', zIndex:'10', color:'#13c16a' }}>
-              I am Luis Fernandes, 2nd year computer science student at CESI Nice.<br/>
-            </span>
-          </div>
+          <AboutMe />
           <h1 style={{ position: "relative", zIndex:"10", textAlign: "center" }}>My skills</h1>
           <Skills />
           <h1 style={{ position: "relative", zIndex:"10", textAlign: "center" }}>My tools</h1>
