@@ -11,7 +11,6 @@ function Projects() {
           </div>
           <div className='flex'>
           <div className='cards'>
-
             <div className='naval-group'>
               <div className="card">
                   <div className="card2">
