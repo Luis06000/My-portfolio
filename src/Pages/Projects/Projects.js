@@ -40,16 +40,16 @@ function Projects() {
               </div>
             </div>
 
-            <div>
+            <div className='CESIFT'>
               <div className="card">
                   <div className="card2">
                     <div className="card-img"></div>
                     <div className="card-info">
-                      <p className="text-title">title </p>
-                      <p className="text-body">description</p>
+                      <p className="text-title">CESI Fight-Team</p>
+                      <p className="text-body">This project is an association we made to promote the practice of martial arts. It offers initiation courses and regular training sessions, fostering a welcoming community for students of all levels. The aim is to encourage physical activity, build discipline, and develop self-defense techniques while promoting respect among members.</p>
                     </div>
                     <div className="card-footer">
-                      <button className="btn-github" onClick={() => window.open('https://github.com', '_blank')}>
+                      <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/Fight-team', '_blank')}>
                         <svg
                           width="16"
                           height="16"
