@@ -69,16 +69,16 @@ function Projects() {
               </div>
             </div>
 
-            <div>
+            <div className='WWW'>
               <div className="card">
                   <div className="card2">
                     <div className="card-img"></div>
                     <div className="card-info">
-                      <p className="text-title">title </p>
-                      <p className="text-body">description</p>
+                      <p className="text-title">Worldwide Weather Watcher</p>
+                      <p className="text-body">Worldwide Weather Watcher is a compact, Arduino-based onboard weather station designed to collect, monitor, and share real-time meteorological data on ships. Equipped with various sensors and an integrated storage system, it enables timely weather hazard alerts, ensuring safer and more informed journeys at sea.</p>
                     </div>
                     <div className="card-footer">
-                      <button className="btn-github" onClick={() => window.open('https://github.com', '_blank')}>
+                      <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/Projet_3W.git', '_blank')}>
                         <svg
                           width="16"
                           height="16"

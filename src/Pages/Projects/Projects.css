@@ -223,6 +223,65 @@
 
 
 
+   /* 3W PROJECT */
+   .WWW .card-img {
+    background-image: url('./Images/3W.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 80%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    margin: 0 auto;
+   }
+   
+   .WWW svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .WWW .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   /*Text*/
+   .WWW .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+   }
+   
+   .WWW .text-body {
+    font-size: .9em;
+    padding: 8px;
+    padding-bottom: 2px;
+   }
+   
+   /*Button*/
+   .WWW .btn-github {
+    margin-top: 2%;
+    margin-left: 49%;
+   }
+   
+   /*Hover*/
+   .WWW .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+
+
+
+
+
+
+
+
+
 
 
 
