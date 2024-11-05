@@ -22,7 +22,7 @@ Un portfolio développé avec React, mettant en valeur mes projets et compétenc
 ### 📄 Pages
 - 🏠 **Accueil**
 - 📂 **Projets**
-- | ℹ️ | **À Propos**
+- ℹ️ **À Propos**
 
 ### 🚀 Projets Présentés
 - 🌊 **Front-end pioneers' challenge** (Naval Group)
@@ -73,10 +73,6 @@ Un portfolio développé avec React, mettant en valeur mes projets et compétenc
 
 - [Portfolio](https://luis06000.github.io/My-portfolio/)
 - [Documentation React](https://reactjs.org/)
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 

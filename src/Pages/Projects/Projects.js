@@ -5,10 +5,12 @@ function Projects() {
 
     return (
         <div className='projects'>
-          <div className='title'>
-            <h1>You can find here some of my projects</h1>
-            💻
-          </div>
+        <div className='title-container'>
+            <div className='title'>
+                <h1>My Projects</h1>
+                <span className="emoji">💻</span>
+            </div>
+        </div>
           <div className='flex'>
           <div className='cards'>
             <div className='naval-group'>

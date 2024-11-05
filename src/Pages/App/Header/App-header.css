@@ -54,3 +54,88 @@
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
 }
+
+.hamburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(19, 193, 106, 0.1);
+  border: 2px solid #13c16a;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #13c16a;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 15px; }
+.hamburger span:nth-child(2) { top: 23px; }
+.hamburger span:nth-child(3) { top: 31px; }
+
+.hamburger.active span:nth-child(1) {
+  transform: translateX(-50%) rotate(45deg);
+  top: 23px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateX(-50%) rotate(-45deg);
+  top: 23px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8em;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        --fs-size: 1.5em;
+        margin: 1% 0;
+    }
+    
+    .App-header {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(25, 26, 26, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      gap: 1em;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .button {
+      --fs-size: 1.5em;
+      margin: 0.5em 0;
+    }
+}

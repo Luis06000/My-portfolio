@@ -6,10 +6,12 @@ import AboutMe from './About-me';
 function About() {
     return (
         <div className="about">
-          <div className='title'>
-            <h1>Learn a bit more about me</h1>
-            🙋🏻‍♂️
-          </div>
+        <div className='title-container'>
+            <div className='title'>
+                <h1>About Me</h1>
+                <span className="emoji">👨‍💻</span>
+            </div>
+        </div>
           <AboutMe />
           <h1 style={{ position: "relative", zIndex:"10", textAlign: "center" }}>My skills</h1>
           <Skills />

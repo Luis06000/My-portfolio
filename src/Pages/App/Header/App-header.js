@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 function AppHeader() {
     const navigate = useNavigate();
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,20 +16,40 @@ function AppHeader() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleNavigation = (path) => {
+        navigate(path);
+        setIsMenuOpen(false);
+    };
+
     return (
         <div className={`App-header ${isScrolled ? 'scrolled' : ''}`}>
-          <button className="button" data-text="Awesome" onClick={() => navigate('/')}>
-            <span className="actual-text">&nbsp;home&nbsp;</span>
-            <span aria-hidden="true" className="hover-text">&nbsp;home&nbsp;</span>
-          </button>
-          <button className="button" data-text="Awesome" onClick={() => navigate('/projects')}>
-            <span className="actual-text">&nbsp;projects&nbsp;</span>
-            <span aria-hidden="true" className="hover-text">&nbsp;projects&nbsp;</span>
-          </button>
-          <button className="button" data-text="Awesome" onClick={() => navigate('/about')}>
-            <span className="actual-text">&nbsp;about&nbsp;</span>
-            <span aria-hidden="true" className="hover-text">&nbsp;about&nbsp;</span>
-          </button>
+            <button 
+                className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                onClick={toggleMenu}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+                <button className="button" onClick={() => handleNavigation('/')}>
+                    <span className="actual-text">&nbsp;home&nbsp;</span>
+                    <span aria-hidden="true" className="hover-text">&nbsp;home&nbsp;</span>
+                </button>
+                <button className="button" onClick={() => handleNavigation('/projects')}>
+                    <span className="actual-text">&nbsp;projects&nbsp;</span>
+                    <span aria-hidden="true" className="hover-text">&nbsp;projects&nbsp;</span>
+                </button>
+                <button className="button" onClick={() => handleNavigation('/about')}>
+                    <span className="actual-text">&nbsp;about&nbsp;</span>
+                    <span aria-hidden="true" className="hover-text">&nbsp;about&nbsp;</span>
+                </button>
+            </div>
         </div>
     );
 }

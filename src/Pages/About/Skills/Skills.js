@@ -1,20 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejs, DiPython, DiGit, DiDatabase } from "react-icons/di";
 import { SiC, SiCplusplus, SiMysql } from "react-icons/si";
 
 function Skills() {
+  const [columns, setColumns] = useState(5);
   const totalItems = 11;
-  const itemsPerRow = 5;
-  const lastRowItems = totalItems % itemsPerRow;
-  const offset = Math.floor((itemsPerRow - lastRowItems) / 2);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 480) {
+        setColumns(2);
+      } else if (window.innerWidth <= 768) {
+        setColumns(3);
+      } else if (window.innerWidth <= 1024) {
+        setColumns(4);
+      } else {
+        setColumns(5);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const lastRowItems = totalItems % columns;
+  const offset = Math.floor((columns - lastRowItems) / 2);
+
+  const getResponsiveMargin = () => {
+    if (window.innerWidth <= 480) return "0 1em";
+    if (window.innerWidth <= 768) return "0 2em";
+    if (window.innerWidth <= 1024) return "0 4em";
+    return "0 7em";
+  };
+
+  const getResponsiveGap = () => {
+    if (window.innerWidth <= 768) return "1em";
+    return "2em";
+  };
 
   return (
     <Row style={{
         display: "grid",
-        gridTemplateColumns: "repeat(5, 1fr)",
-        margin: "0 7em",
-        gap: "2em",
+        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        margin: getResponsiveMargin(),
+        gap: getResponsiveGap(),
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
