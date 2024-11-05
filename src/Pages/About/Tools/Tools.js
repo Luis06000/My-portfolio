@@ -5,11 +5,16 @@ import { FaWindows, FaLinux, FaGithub } from "react-icons/fa";
 import { SiVisualstudiocode, SiPhpmyadmin, SiArduino } from "react-icons/si";
 
 function Tools() {
+  const totalItems = 11;
+  const itemsPerRow = 5;
+  const lastRowItems = totalItems % itemsPerRow;
+  const offset = Math.floor((itemsPerRow - lastRowItems) / 2);
+
   return (
     <Row style={{
         display: "grid",
         gridTemplateColumns: "repeat(5, 1fr)",
-        margin: "0 10em",
+        margin: "0 7em",
         gap: "2em",
         justifyContent: "center",
         alignItems: "center",
@@ -31,6 +36,9 @@ function Tools() {
       <Col xs={4} md={2} className="tech-icons" title='php MyAdmin'>
         <SiPhpmyadmin />
       </Col>
+      {[...Array(offset)].map((_, index) => (
+        <div key={`offset-${index}`} style={{ visibility: "hidden" }} />
+      ))}
       <Col xs={4} md={2} className="tech-icons" title='Arduino'>
         <SiArduino />
       </Col>

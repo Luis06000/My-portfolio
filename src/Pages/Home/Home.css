@@ -1,3 +1,8 @@
+.home {
+  padding-bottom: 7.8em;
+}
+
+
 .home .title{
   display: flex;
     position: relative;
@@ -50,12 +55,63 @@
 
 
 
+  .intro-text {
+    position: absolute;
+    z-index: 100;
+    left: 11em;
+    top: 21em;
+    width: 36em;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.intro-text .bell-icon {
+    font-size: 1.8em;
+    color: rgba(255, 255, 0, 0.7);
+    animation: bell-shake 3s infinite;
+}
+
+.intro-text .separator {
+    height: 8em;
+    width: 1em;
+    background: rgba(255, 255, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+}
+
+@keyframes bell-shake {
+    0%, 80%, 100% {
+        transform: rotate(0);
+    }
+    85% {
+        transform: rotate(15deg);
+    }
+    90% {
+        transform: rotate(-15deg);
+    }
+    95% {
+        transform: rotate(10deg);
+    }
+}
+
+.intro-text p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.3vw;
+    color: #a8f7d0;
+}
+
+
+
+
+
 
 
   .cube-loader {
     position: relative;
     margin-top: 2%;
-    margin-left: 58%;
+    margin-left: 65em;
     width: 225px;
     height: 225px;
     transform-style: preserve-3d;

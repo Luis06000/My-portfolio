@@ -27,11 +27,11 @@ function AboutMe() {
                 <br/><br/>
                 Apart from my studies, I also spend time on activities such as :<br/>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5em', marginLeft: '3em', marginTop: '1em', marginBottom:'2.5em' }}>
-                    <div><FaArrowsTurnRight /> code different projects</div>
-                    <div><FaArrowsTurnRight /> take motorcycle rides</div>
-                    <div><FaArrowsTurnRight /> play video games</div>
-                    <div><FaArrowsTurnRight /> do sports</div>
-                    <div><FaArrowsTurnRight /> spend time with my friends</div>
+                    <div><FaArrowsTurnRight /> Code different projects</div>
+                    <div><FaArrowsTurnRight /> Take motorcycle rides</div>
+                    <div><FaArrowsTurnRight /> Play video games</div>
+                    <div><FaArrowsTurnRight /> Do sports</div>
+                    <div><FaArrowsTurnRight /> Spend time with my friends</div>
                 </div>
             </div>
         </div>
