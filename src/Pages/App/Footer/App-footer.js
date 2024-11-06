@@ -3,6 +3,10 @@ import './App-footer.css';
 function AppFooter() {
     return (
         <footer>
+          <div className="footer-left">
+            <img src={process.env.PUBLIC_URL + '/logo192.png'} alt="logo"/>
+            <span>Made by Fernandes Luis</span>
+          </div>
           <div className="footer">
             <a href='https://www.instagram.com/_luisfds_?igsh=anI0aGlrM3hveGVu' target='_blank' rel="noopener noreferrer" className="instagram">
               <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
