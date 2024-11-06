@@ -8,6 +8,8 @@ import Projects from '../Projects/Projects.js';
 import About from '../About/About.js';
 import Background from '../../Background/Background.js';
 import Preloader from '../Loader/Preloader.js';
+import CookieBanner from '../../components/CookieBanner';
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,6 +48,7 @@ function App() {
         </Routes>
         <AppFooter />
       </div>
+      <CookieBanner />
     </Router>
   );
 }
