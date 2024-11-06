@@ -1,5 +1,5 @@
 .projects {
-  padding-bottom: 7.8em;
+  padding-bottom: 1em;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .title h1 {
@@ -25,7 +25,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  line-height: 1;
+  line-height: 1.5;
   animation: typewriter2 2s steps(25) forwards;
   width: 0;
 }
@@ -340,13 +340,48 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .title-container {
-    margin-left: 3em;
+@media screen and (max-width: 1400px) {
+  .btn-github {
+    display: none;
+  }
+  .card, .card2 {
+    width: 20em;
+    height: 28em;
   }
   
-  .title h1, .title .emoji {
-    font-size: 35px;
+  .text-title {
+    font-size: 1.1em;
+  }
+  
+  .text-body {
+    font-size: 0.85em;
+    padding: 7px;
+  }
+  
+  .btn-github {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card, .card2 {
+    width: 18em;
+    height: 26em;
+  }
+  
+  .text-title {
+    font-size: 1em;
+  }
+  
+  .text-body {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+  
+  .btn-github {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -357,6 +392,25 @@
   
   .title h1, .title .emoji {
     font-size: 30px;
+  }
+  
+  .card, .card2 {
+    width: 16em;
+    height: 24em;
+  }
+  
+  .text-title {
+    font-size: 0.95em;
+  }
+  
+  .text-body {
+    font-size: 0.75em;
+    padding: 5px;
+  }
+  
+  .btn-github {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -369,5 +423,161 @@
   
   .title h1, .title .emoji {
     font-size: 24px;
+  }
+  
+  .card, .card2 {
+    width: 100%;
+    max-width: 20em;
+    height: 28em;
+  }
+  
+  .text-title {
+    font-size: 1.1em;
+  }
+  
+  .text-body {
+    font-size: 0.85em;
+    padding: 7px;
+  }
+  
+  .btn-github {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+.contributions-section {
+    text-align: center;
+    margin-top: 7em;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contributions-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.contributions-container h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 700;
+    background: linear-gradient(to right,#13c16a, #086235);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1em;
+}
+
+.github-chart-container {
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.github-chart {
+    width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+.contributions-legend {
+    position: relative;
+    margin-top: 1em;
+    font-style: italic;
+    font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    padding: 0.3em;
+    z-index: 1;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend-cube {
+  display: inline-block;
+  width: clamp(12px, 1.2vw, 15px);
+  height: clamp(12px, 1.2vw, 15px);
+  border: 1px solid #30363d;
+  border-radius: 2px;
+}
+
+.legend-cube:nth-child(1) { background-color: #ebedf0; }
+.legend-cube:nth-child(2) { background-color: #9be9a8; }
+.legend-cube:nth-child(3) { background-color: #40c463; }
+.legend-cube:nth-child(4) { background-color: #30a14e; }
+.legend-cube:nth-child(5) { background-color: #216e39; }
+
+@media screen and (max-width: 768px) {
+    .github-chart-container {
+        max-width: 450px;
+    }
+    
+    .github-chart {
+        width: 200%;
+        transform: translateX(-50%);
+    }
+}
+
+.title.coming-soon-title h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  white-space: normal;
+  animation: none;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .title.coming-soon-title h1 {
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title.coming-soon-title h1 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title.coming-soon-title h1 {
+        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    }
+
+    .legend-cube {
+        width: clamp(8px, 1vw, 12px);   /* Plus petit sur mobile */
+        height: clamp(8px, 1vw, 12px);  /* Plus petit sur mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .title.coming-soon-title h1 {
+      font-size: clamp(0.7rem, 2vw, 1rem);
+  }
+
+  .card, .card2 {
+    height: 26em;
+    max-width: 18em;
+  }
+  
+  .text-title {
+    font-size: 1em;
+  }
+  
+  .text-body {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+  
+  .btn-github {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.75rem;
   }
 }

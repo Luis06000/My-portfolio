@@ -1,9 +1,10 @@
+import './About-me.css';
 import { FaArrowsTurnRight } from "react-icons/fa6";
 
 function AboutMe() {
     return (
         <div className='about-me'>
-            <div style={{ position: 'relative', zIndex: '10', marginLeft: '7em', color: '#a8f7d0', fontSize: '18px' }}>
+            <div className="about-container">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
                     <div>
                         I am Luis Fernandes, I live in{' '}

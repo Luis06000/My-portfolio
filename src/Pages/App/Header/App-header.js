@@ -18,11 +18,19 @@ function AppHeader() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        document.body.style.overflow = !isMenuOpen ? 'hidden' : 'auto';
     };
+
+    useEffect(() => {
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
 
     const handleNavigation = (path) => {
         navigate(path);
         setIsMenuOpen(false);
+        document.body.style.overflow = 'auto';
     };
 
     return (

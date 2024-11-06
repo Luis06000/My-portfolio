@@ -11,7 +11,9 @@
 }
 
 .App-header.scrolled {
-    backdrop-filter: blur(15px);
+    background: rgba(25, 26, 26, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .button {
@@ -108,8 +110,16 @@
     }
     
     .App-header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         padding: 5px 0;
+    }
+    
+    .App-header.scrolled {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(25, 26, 26, 0.95);
     }
 
     .hamburger {
@@ -117,17 +127,20 @@
     }
   
     .nav-links {
-      display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      align-items: center;
-      background: rgba(25, 26, 26, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 20px 0;
-      gap: 1em;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: calc(100vh);
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(25, 26, 26, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 80px 20px 20px 90px;
+        gap: 1em;
+        z-index: 999;
     }
   
     .nav-links.active {
@@ -137,5 +150,9 @@
     .button {
       --fs-size: 1.5em;
       margin: 0.5em 0;
+    }
+
+    .hamburger {
+        z-index: 1000;
     }
 }
