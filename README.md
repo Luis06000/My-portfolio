@@ -25,9 +25,12 @@ Un portfolio développé avec React, mettant en valeur mes projets et compétenc
 - ℹ️ **À Propos**
 
 ### 🚀 Projets Présentés
-- 🌊 **Front-end pioneers' challenge** (Naval Group)
+- 🌊 **Front-end pioneers' challenge** (Concours)
 - 🥋 **CESI Fight-Team** (Association)
-- ☁️ **Worldwide Weather Watcher** (3W)
+- ☁️ **Worldwide Weather Watcher** (École)
+- 🏎️ **Fast and Furious** (École)
+- 💻 **Password manager** (Personnel)
+- 🛜 **Signal** (École)
 
 ## 🎨 Compétences et Outils
 
