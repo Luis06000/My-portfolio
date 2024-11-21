@@ -81,6 +81,9 @@ function Projects() {
                                     <p className="text-body">This React web app offers two essential tools for password management: a generator and a checker. Users can create secure, customizable passwords and analyze existing ones for strength. It emphasizes security with a color-coded rating system, evaluating passwords based on length and character variety for instant feedback.</p>
                                 </div>
                                 <div className="card-footer">
+                                    <button className="btn-test" onClick={() => window.open('https://luis06000.github.io/Password-manager/', '_blank')}>
+                                        Test it
+                                    </button>
                                     <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/Password-manager', '_blank')}>
                                         <svg
                                             width="16"
@@ -168,6 +171,9 @@ function Projects() {
                                     <p className="text-body">This project is an association we made to promote the practice of martial arts. It offers initiation courses and regular training sessions, fostering a welcoming community for students of all levels. The aim is to encourage physical activity, build discipline, and develop self-defense techniques while promoting respect among members.</p>
                                 </div>
                                 <div className="card-footer">
+                                    <button className="btn-test" onClick={() => window.open('https://luis06000.github.io/Fight-team/', '_blank')}>
+                                        Test it
+                                    </button>
                                     <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/Fight-team', '_blank')}>
                                         <svg
                                             width="16"
