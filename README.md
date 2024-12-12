@@ -28,7 +28,7 @@ Un portfolio développé avec React, mettant en valeur mes projets et compétenc
 - 🌊 **Front-end pioneers' challenge** (Concours)
 - ☁️ **Worldwide Weather Watcher** (École)
 - 💻 **Password manager** (Personnel)
-- 🏎️ **Fast and Furious** (École)
+- 🏎️ **QR Reader** (Personnel)
 - ❓ **Guess The Number** (Personnel)
 - 🥋 **CESI Fight-Team** (Association)
 

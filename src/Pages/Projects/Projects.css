@@ -297,9 +297,9 @@
   box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
 
-/* FAST AND FURIOUS PROJECT */
-.fast-and-furious .card-img {
-  background-image: url('./Images/fastandfurious.png');
+/* QR READER PROJECT */
+.qr-reader .card-img {
+  background-image: url('./Images/qrreader.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,12 +310,12 @@
   margin: 0 auto;
 }
 
-.fast-and-furious svg {
+.qr-reader svg {
   width: 20px;
   height: 20px;
 }
 
-.fast-and-furious .card-footer {
+.qr-reader .card-footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -323,27 +323,27 @@
 }
 
 /*Text*/
-.fast-and-furious .text-title {
+.qr-reader .text-title {
   font-weight: 900;
   font-size: 1.2em;
   line-height: 1.5;
   border-top: 1px solid #ddd;
 }
 
-.fast-and-furious .text-body {
+.qr-reader .text-body {
   font-size: .9em;
   padding: 8px;
   padding-bottom: 2px;
 }
 
 /*Button*/
-.fast-and-furious .btn-github {
+.qr-reader .btn-github {
   margin-top: 2%;
   margin-left: 49%;
 }
 
 /*Hover*/
-.fast-and-furious .card-img:hover {
+.qr-reader .card-img:hover {
   transform: translateY(-25%);
   box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }

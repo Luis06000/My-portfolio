@@ -104,16 +104,16 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className='fast-and-furious'>
+                    <div className='qr-reader'>
                         <div className="card">
                             <div className="card2">
                                 <div className="card-img"></div>
                                 <div className="card-info">
-                                    <p className="text-title">Fast and Furious</p>
-                                    <p className="text-body">Fast & Furious is a project carried out during my studies, based on Python designed to model and analyze vehicle dynamics inspired by iconic movie stunts. Using mathematical calculations and visualization libraries, it simulates real-world physics principles, including acceleration, drag forces, and momentum.</p>
+                                    <p className="text-title">QR Reader</p>
+                                    <p className="text-body">QR Reader is a personal project developed in Python, designed to scan and interpret QR codes. Using computer vision libraries, it quickly decodes and navigates to various types of data, such as web links. The project aims to offer a simple, fast and efficient solution for reading QR codes from saved images.</p>
                                 </div>
                                 <div className="card-footer">
-                                    <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/fast-and-furious.git', '_blank')}>
+                                    <button className="btn-github" onClick={() => window.open('https://github.com/Luis06000/qr-reader', '_blank')}>
                                         <svg
                                             width="16"
                                             height="16"
