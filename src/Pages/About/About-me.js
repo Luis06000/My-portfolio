@@ -7,10 +7,7 @@ function AboutMe() {
             <div className="about-container">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
                     <div>
-                        I am Luis Fernandes, I live in{' '}
-                        <a href="https://wtolx.com/hLPmf" target='_blank' rel="noopener noreferrer" style={{ color: '#13c16a' }}>
-                            <span>Nice, France</span>
-                        </a>.
+                        I am Luis Fernandes, I live in Nice, France.
                     </div>
                     <div>
                         I am currently studying at{' '}
@@ -20,7 +17,7 @@ function AboutMe() {
                     </div>
                     <div>
                         I also created, in collaboration with friends, the{' '}
-                        <a href="https://www.cesi.fr" target='_blank' rel="noopener noreferrer" style={{ color: '#13c16a' }}>
+                        <a href="https://luis06000.github.io/Fight-team/" target='_blank' rel="noopener noreferrer" style={{ color: '#13c16a' }}>
                             <span>CESI Fight-Team</span>
                         </a> association.
                     </div>
