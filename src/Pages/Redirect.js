@@ -5,7 +5,9 @@ function Redirect() {
     const location = useLocation();
 
     useEffect(() => {
-        window.history.replaceState(null, '', location.pathname);
+        if (window.location.pathname !== location.pathname) {
+            window.history.replaceState(null, '', location.pathname);
+        }
     }, [location]);
 
     return null;
