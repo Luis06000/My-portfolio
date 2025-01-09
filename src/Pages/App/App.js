@@ -8,7 +8,7 @@ import Projects from '../Projects/Projects.js';
 import About from '../About/About.js';
 import Background from '../../Background/Background.js';
 import Preloader from '../Loader/Preloader.js';
-import Redirect from '../Redirect/Redirect.js';
+import Redirect from '../Redirect.js';
 
 
 function ScrollToTop() {
