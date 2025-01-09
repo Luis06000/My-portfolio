@@ -8,6 +8,7 @@ import Projects from '../Projects/Projects.js';
 import About from '../About/About.js';
 import Background from '../../Background/Background.js';
 import Preloader from '../Loader/Preloader.js';
+import Redirect from '../Redirect/Redirect.js';
 
 
 function ScrollToTop() {
@@ -34,6 +35,7 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
+      <Redirect />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Background />
         <AppHeader />
