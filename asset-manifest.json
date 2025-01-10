@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a70f3c20.css",
-    "main.js": "/static/js/main.05e7b44c.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
-    "static/media/guessnumber.png": "/static/media/guessnumber.0f120f6489edef6ceb6c.png",
-    "static/media/passwordmanager.png": "/static/media/passwordmanager.0385b6e04b834654838a.png",
-    "static/media/CESIFT.png": "/static/media/CESIFT.67701eed4aba230c7e50.png",
-    "static/media/3W.png": "/static/media/3W.09f309c0f7707a5d2380.png",
-    "static/media/Loader.svg": "/static/media/Loader.223eb1b3d75526882604.svg",
-    "index.html": "/index.html",
-    "main.a70f3c20.css.map": "/static/css/main.a70f3c20.css.map",
-    "main.05e7b44c.js.map": "/static/js/main.05e7b44c.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/My-portfolio/static/css/main.503140fb.css",
+    "main.js": "/My-portfolio/static/js/main.36eb7ce7.js",
+    "static/js/453.1407b060.chunk.js": "/My-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/guessnumber.png": "/My-portfolio/static/media/guessnumber.0f120f6489edef6ceb6c.png",
+    "static/media/passwordmanager.png": "/My-portfolio/static/media/passwordmanager.0385b6e04b834654838a.png",
+    "static/media/CESIFT.png": "/My-portfolio/static/media/CESIFT.67701eed4aba230c7e50.png",
+    "static/media/3W.png": "/My-portfolio/static/media/3W.09f309c0f7707a5d2380.png",
+    "static/media/Loader.svg": "/My-portfolio/static/media/Loader.223eb1b3d75526882604.svg",
+    "index.html": "/My-portfolio/index.html",
+    "main.503140fb.css.map": "/My-portfolio/static/css/main.503140fb.css.map",
+    "main.36eb7ce7.js.map": "/My-portfolio/static/js/main.36eb7ce7.js.map",
+    "453.1407b060.chunk.js.map": "/My-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a70f3c20.css",
-    "static/js/main.05e7b44c.js"
+    "static/css/main.503140fb.css",
+    "static/js/main.36eb7ce7.js"
   ]
 }
