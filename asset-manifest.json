@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.507091f5.css",
-    "main.js": "/static/js/main.a5b463d8.js",
+    "main.css": "/static/css/main.a70f3c20.css",
+    "main.js": "/static/js/main.05e7b44c.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/guessnumber.png": "/static/media/guessnumber.0f120f6489edef6ceb6c.png",
     "static/media/passwordmanager.png": "/static/media/passwordmanager.0385b6e04b834654838a.png",
@@ -9,12 +9,12 @@
     "static/media/3W.png": "/static/media/3W.09f309c0f7707a5d2380.png",
     "static/media/Loader.svg": "/static/media/Loader.223eb1b3d75526882604.svg",
     "index.html": "/index.html",
-    "main.507091f5.css.map": "/static/css/main.507091f5.css.map",
-    "main.a5b463d8.js.map": "/static/js/main.a5b463d8.js.map",
+    "main.a70f3c20.css.map": "/static/css/main.a70f3c20.css.map",
+    "main.05e7b44c.js.map": "/static/js/main.05e7b44c.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.507091f5.css",
-    "static/js/main.a5b463d8.js"
+    "static/css/main.a70f3c20.css",
+    "static/js/main.05e7b44c.js"
   ]
 }
