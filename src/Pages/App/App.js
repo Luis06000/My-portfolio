@@ -39,11 +39,11 @@ function App() {
         <AppHeader />
         <ScrollToTop />
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Home />} />
+           <Route path="/" element={<Home />} />
+           <Route path="/Home" element={<Home />} />
+           <Route path="/projects" element={<Projects />} />
+           <Route path="/about" element={<About />} />
+           <Route path="*" element={<Home />} />
         </Routes>
         <AppFooter />
       </div>
