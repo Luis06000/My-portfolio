@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Preloader load={load} />
       <Redirect />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
