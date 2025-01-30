@@ -11,7 +11,7 @@ function AboutMe() {
                     </div>
                     <div>
                         I am currently studying at{' '}
-                        <a href="https://www.cesi.fr" target='_blank' rel="noopener noreferrer" style={{ color: '#13c16a' }}>
+                        <a href="https://nice.cesi.fr" target='_blank' rel="noopener noreferrer" style={{ color: '#13c16a' }}>
                             <span>CESI</span>
                         </a>, to become a computer engineer.
                     </div>
